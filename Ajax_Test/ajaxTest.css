@@ -1,0 +1,46 @@
+*{margin: 0;}
+body{
+    background: linear-gradient(to left, #b92b27, #1565c0);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: rgb(31, 31, 31);
+    font-family: 'Helvetica';
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+.hl{
+    background-color: rgb(218, 190, 8);
+}
+input {
+    min-height: 30px;
+    font-size: 2em;
+    text-align: center;
+    border: 0;
+    border-radius: 5px;
+    border: 10px solid lightgray;
+
+}
+ul{
+    list-style: none;
+    padding: 0 30px;
+}
+li{
+    background-color: whitesmoke;
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    text-transform: capitalize;
+    padding-left: 15px;
+}
+.population{
+    padding-right: 15px;    
+    font-size: 0.8em;
+}
+li:nth-child(2n+1){
+    transform: perspective();
+}
