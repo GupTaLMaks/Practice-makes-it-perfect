@@ -1,0 +1,32 @@
+body{
+    background-color: #333;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+    font-family: 'Helvetica';
+}
+.controls{
+    margin-bottom: 50px;
+}
+h2{
+    font-size: 2em;
+}
+.hl{
+    color: var(--base);
+}
+
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+    max-width: 800px;
+    width: 90vw;
+}
+
+:root{
+    --base : #ffcc00;
+    --spacing : 10px;
+    --blur : 10px;
+}
+
