@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+*{
+    margin: 0;
+}
+body{
+    background-image: 
+        linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    flex-direction: column;
+}
+
+.voiceinator{
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    margin: 50px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.voiceinator > * {
+    width: 95%;
+}
+.voiceinator > h1{
+    width: 100%;
+    font-size: 3em;
+    height: 2em;
+    font-family: 'Pacifico', cursive;
+    background-color: rgb(241, 212, 18);
+    text-align: center;
+    line-height: 2em;
+}
+#voices{
+    border: none;
+    font-size: 1.2em;
+    height: 1.1em;
+    margin: 15px 0 ;
+    background-color: rgb(241, 241, 241);
+}
+label{
+    font-size: .8em;
+}
+input[type="range"]{
+    margin: 20px 0;
+    height: 5px;
+    align-self: center;
+    appearance: none;
+    border-radius: 5px;
+    background-color: rgba(190, 190, 190, 0.7);
+
+}
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: rgb(241, 212, 18);
+    border-radius: 7.5px; 
+}
+textarea{
+    min-height: 200px;
+    background-color: rgb(241, 241, 241);
+    margin: 10px 0;
+    border: none;
+    font-size: 1.3em;
+    line-height: 1.1em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons button {
+    font-family: 'Pacifico', cursive;
+    line-height: 50px;
+    font-size: 1.3em;
+    width: 45%;
+    border: none;
+    margin: 20px 10px;
+    height: 60px;
+    background-color: rgb(241, 212, 18);
+}
