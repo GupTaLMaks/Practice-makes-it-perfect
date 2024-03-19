@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+    height: 100%;
+    background-image:
+        linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70%);
+    background-size: cover;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{  
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.player{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+video{
+    width: 85%;
+    aspect-ratio: 16/9;
+}
+.speed{
+    width: 7%;
+    overflow: hidden;
+    background: whitesmoke;
+    border-radius: 50px;
+}
+.speed-bar{
+    background: linear-gradient(rgb(27, 84, 170), rgb(158, 86, 165));
+    height: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
