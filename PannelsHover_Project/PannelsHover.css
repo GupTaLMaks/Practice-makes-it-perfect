@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+body{
+    background-image:
+        linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+nav{
+    width: 100%;
+    position: relative;
+    perspective: 600px;
+}
+ul{
+    list-style: none;
+    padding: 30px 0 ;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu > li > a {
+    color: yellow;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.2);
+    font-weight: bold;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 20px;
+    border-radius: 5px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu > li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.dropdown{
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 20px;
+    top: -20px;
+    border-radius: 2px;
+    transition: all .5s;
+    transform: translateY(100px);
+    will-change: transform;
+    display: none;
+}
+.trigger-enter .dropdown{
+    display: block;
+}
+.trigger-enter-active .dropdown{
+    opacity: 1;
+}
+.dropdownBackground{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    transition: all .3s, opacity .1s, translate .2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+.dropdownBackground.open{
+    opacity: 1;
+}
+.arrow{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: #fff;
+    transform: translateY(-50%) rotate(45deg);
+}
+.bio{
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+}
+.bio  img {
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 25%;
+}
+.courses{
+    min-width: 300px;
+}
+.courses li {
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.dropdown a {
+    text-decoration: none;
+    color: #cea100;
+}
+a.button{
+    background: black;
+    display: block;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.button[href*=twitter] {background: #019fe9;}
+.button[href*=twitch] {background: #6441a5;}
+.button[href*=youtube] {background: #c4302b;}
+.button[href*=instagram] {background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);}
+.button[href*=linkedin] {background: #0e76a8;}
+.button[href*=github] {background: #24292e;}
